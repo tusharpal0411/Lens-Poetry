@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--CSS PART-->
+<style>
+
+  /* Navigation Bar */
+
+.navnav {
+  text-align: center;
+  display: inline-block;
+}
+
+#navbar {
+  width: 100%;
+  height: 40px;
+  padding-top: 22px;
+  padding-bottom: 70px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbar ul a {
+  padding: 0 10px;
+}
+
+#navbar ul li{
+  margin: 5px;
+  size: 2px;
+  display: inline-block;
+}
+
+
+#ul_navbar li  {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+#ul_navbar li:hover {
+  transform: scale(1.5); 
+}
+
+
+/*Name*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 35%;
+}
+
+.abc{
+  text-align: center;
+  display: inline-block;
+}
+
+#xyz {
+  width: 100%;
+  height: 40px;
+}
+
+.abc h2{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0%;
+}
+
+.abc h2 a{
+  text-decoration: none;
+  color: rgb(0, 109, 100);
+}
+.abc h2 b{
+  font-family:'Times New Roman', Times, serif;
+}
+
+/*Page Moto*/
+
+.tales {  text-align: center;
+  display: inline-block;}
+ 
+#talk {
+  width: 100%;
+  height: 40px;
+}
+
+.tales h2{
+  background-color: rgb(0, 109, 100);
+  font-size: 17px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+.tales h3{
+  border-top: 1px solid #b3b3b3;
+  font-size: 12px;
+  color: rgb(104, 104, 104);
+  font-family: Arial, sans-serif;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+/*Gallery*/
+
+.gal{
+  padding-top: 50px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clicks{
+  padding-bottom: 12px;
+}
+
+/* Extra */
+
+hr{
+        border-top: 10px solid rgb(0, 109, 100);
+    }
+
+h3{
+  color: rgb(0, 109, 100);
+}   
+
+
+</style>
+
+<!--HTML PART-->
+
+
+</head>
+<body>
+  
+  <!--Name-->
+
+ <div class="content">
+    <img src="images\lens.png" alt="LENSE POERTY" class="center">
+     <div id="xyz" class="abc">
+      <h2>by <a href="#about-us"><b>Tushar Pal</b></a></h2>
+     </div>
+ </div>
+
+<!--Page Moto-->
+
+ <div id="talk" class="tales">
+  <h2>Moments, tales and more</h2>
+</div>
+
+ <!--Navigation bar-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!--Gallery-->
+<div class="gal">
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\1.jpg">
+      <img src="images\Photographs\1.jpg" alt="Photograph 1">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\2.jpg">
+      <img src="images\Photographs\2.jpg" alt="Photograph 2">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\3.jpg">
+      <img src="images\Photographs\3.jpg" alt="Photograph 3">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\4.jpg">
+      <img src="images\Photographs\4.jpg" alt="Photograph 4">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center" id="about-us">ABOUT</h3>
+  <p>"<b>Lens Poetry</b>", a captivating journey through the world of minimalistic street style and nature photography. Lens Poetry is my creative canvas where I share my passion for <b>mobile camera photography</b>. Through my lens, I strive to capture the world's quiet elegance and the unspoken stories within it. From the simplicity of vintage streets to the tranquil beauty of nature, each image is a visual poem, revealing the artistry in simplicity. It is an invitation to see the extraordinary in the ordinary, a testament to the power of a single frame. It's my journey of exploring life's subtleties and sharing them with you. Join me in this visual poetry adventure.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="images\my photo.jpg" class="w3-round w3-image"  alt="Photo of Me" width="500" height="333">
+    </div>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6  w3-padding-large">
+      <p>I'm <b>Tushar Pal</b>, a small-town dweller from a charming village in West Bengal, India. While my days are filled with engineering studies, my heart belongs to the world of art. As an amateur painter, I bring my creativity to life on canvas. Photography, however, is where I find serenity and capture the beauty of the everyday. Through my lens, I transform moments into memories, revealing the hidden elegance in simplicity. Join me on my photographic journey, where I strive to share the world as I see it, one frame at a time. Welcome to my photography page; let's explore life's beauty together.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-10" id="portfolio">
+  <h3 class="w3-center">MY WORKS</h3>
+  <p class="w3-center"><em>My mobile camera photographs are windows to a world of simplicity and elegance. 
+    I uncover the poetry in everyday moments, unveiling hidden beauty. 
+    Each image is a visual story, capturing emotions, nature's wonders, and the grace of urban life. 
+    Through these photos, I aim to share the enchantment I find in life's subtleties and inspire a deeper 
+    appreciation for the world's ordinary splendors.</em></p><br>
+</div>
+
+<!-- Main Gallery-->
+<div class="clicks">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\1.jpg">
+      <img src="images\Photographs\MY WORK\1.jpg" alt="Photograph 1">
+    </a>
+    <div class="desc">Another Spring</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\2.jpg">
+      <img src="images\Photographs\MY WORK\2.jpg" alt="Photograph 2">
+    </a>
+    <div class="desc">The Journey</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\3.jpg">
+      <img src="images\Photographs\MY WORK\3.jpg" alt="Photograph 3">
+    </a>
+    <div class="desc">Hide & seek</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\4.jpg">
+      <img src="images\Photographs\MY WORK\4.jpg" alt="Photograph 4">
+    </a>
+    <div class="desc">The Fight</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+<div class="clicks">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\5.jpg">
+      <img src="images\Photographs\MY WORK\5.jpg" alt="Photograph 4">
+    </a>
+    <div class="desc">Conceal</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\6.jpg">
+      <img src="images\Photographs\MY WORK\6.jpg" alt="Photograph 4">
+    </a>
+    <div class="desc">The Protector</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\7.jpg">
+      <img src="images\Photographs\MY WORK\7.jpg" alt="Photograph 4">
+    </a>
+    <div class="desc">At Eternitys' Gate</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images\Photographs\MY WORK\8.jpg">
+      <img src="images\Photographs\MY WORK\8.jpg" alt="Photograph 4">
+    </a>
+    <div class="desc">The Wait</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+
+<div class="clicks">
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images\Photographs\MY WORK\9.jpg">
+        <img src="images\Photographs\MY WORK\9.jpg" alt="Photograph 9">
+      </a>
+      <div class="desc">Moon-Tree</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images\Photographs\MY WORK\10.jpg">
+        <img src="images\Photographs\MY WORK\10.jpg" alt="Photograph 10">
+      </a>
+      <div class="desc">Magical Hour</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images\Photographs\MY WORK\11.jpg">
+        <img src="images\Photographs\MY WORK\11.jpg" alt="Photograph 11">
+      </a>
+      <div class="desc">Frame</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images\Photographs\MY WORK\12.jpg">
+        <img src="images\Photographs\MY WORK\12.jpg" alt="Photograph 12">
+      </a>
+      <div class="desc">Pride</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  </div>
+
+<hr>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-10" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <nav id="navbar" class="navnav">
+      <ul id=ul_navbar>
+       <li><a href="mailto:support@tsrpal2001@gmail.com"> <img src="images\gmail.png" width="40px"></a></li> .
+       <li><a href="https://www.facebook.com/0tushar.art"><img src="images\facebook.png" width="40px"></a></li> .
+       <li><a href="https://www.instagram.com/lenspoetry0/"><img src="images\instagram.png" width="40px"></a></li>
+      </ul>
+    </nav>
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14627.841199859065!2d86
+      .87969021257523!3d23.56986927842381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+      .1!3m3!1m2!1s0x39f6e2971e9688ef%3A0x1dd0f4fd9d328b24!2sBhaluka%2C%20West%20Bengal%20722153!
+      5e0!3m2!1sen!2sin!4v1697264561862!5m2!1sen!2sin" class="w3-image w3-round" style="width:100%"></iframe>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Bhaluka, Bankura, WB, India<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7063028090<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tsrpal2001@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or ping me:</p>
+          <a href="https://api.whatsapp.com/send?phone=706308090" 
+          style="display: inline-block; padding:16px; border-radius: 8px; 
+          background-color: #25D366; color: #fff; text-decoration: none;
+           font-family: sans-serif; font-size: 16px;">on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="talk" class="tales">
+    <h3>| Copyright © 2023 Lens Poetry |</h3>
+  </div>
+</footer>
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
