@@ -63,6 +63,21 @@
   width: 35%;
 }
 
+@media only screen and (max-width: 700px) {
+  .center {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .center {
+    width: 80%;
+    margin:auto;
+    padding-top: 30px;
+  }
+}
+
 .abc{
   text-align: center;
   display: inline-block;
@@ -99,9 +114,9 @@
 }
 
 .tales h2{
-  background-color: rgb(0, 109, 100);
+  background-color: rgb(255, 255, 255);
   font-size: 17px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -117,11 +132,32 @@
   margin-top: 0px;
 }
 
-/*Gallery*/
+/*Background Imagw*/
 
-.gal{
-  padding-top: 50px;
+div.gal img {
+  width: 100%;
+  height: auto;
 }
+
+.res {
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .res {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .res {
+    width: 100%;
+  }
+}
+
+
+/*Gallery*/
 
 div.gallery img {
   width: 100%;
@@ -146,7 +182,7 @@ div.desc {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0;
   }
 }
 
@@ -168,6 +204,10 @@ div.desc {
 
 /* Extra */
 
+.p{
+    text-align: justify;
+}
+
 hr{
         border-top: 10px solid rgb(0, 109, 100);
     }
@@ -179,10 +219,10 @@ h3{
 
 </style>
 
+</head>
+
 <!--HTML PART-->
 
-
-</head>
 <body>
   
   <!--Name-->
@@ -199,6 +239,14 @@ h3{
  <div id="talk" class="tales">
   <h2>Moments, tales and more</h2>
 </div>
+
+<!-- Backgroung Image -->
+
+<div class="res">
+    <div class="gal">
+        <img src="images\Photographs\10.jpg" alt="background Image">
+    </div>
+  </div>
 
  <!--Navigation bar-->
 <!-- Navbar (sit on top) -->
@@ -219,43 +267,6 @@ h3{
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
-</div>
-
-<!--Gallery-->
-<div class="gal">
- <div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images\Photographs\1.jpg">
-      <img src="images\Photographs\1.jpg" alt="Photograph 1">
-    </a>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images\Photographs\2.jpg">
-      <img src="images\Photographs\2.jpg" alt="Photograph 2">
-    </a>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images\Photographs\3.jpg">
-      <img src="images\Photographs\3.jpg" alt="Photograph 3">
-    </a>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images\Photographs\4.jpg">
-      <img src="images\Photographs\4.jpg" alt="Photograph 4">
-    </a>
-  </div>
-</div>
-
-<div class="clearfix"></div>
 </div>
 
 <!-- Container (About Section) -->
@@ -284,7 +295,7 @@ h3{
     appreciation for the world's ordinary splendors.</em></p><br>
 </div>
 
-<!-- Main Gallery-->
+<!--Gallery-->
 <div class="clicks">
 <div class="responsive">
   <div class="gallery">
@@ -379,7 +390,7 @@ h3{
       <a target="_blank" href="images\Photographs\MY WORK\10.jpg">
         <img src="images\Photographs\MY WORK\10.jpg" alt="Photograph 10">
       </a>
-      <div class="desc">Magical Hour</div>
+      <div class="desc">Frame</div>
     </div>
   </div>
   
@@ -388,7 +399,7 @@ h3{
       <a target="_blank" href="images\Photographs\MY WORK\11.jpg">
         <img src="images\Photographs\MY WORK\11.jpg" alt="Photograph 11">
       </a>
-      <div class="desc">Frame</div>
+      <div class="desc">Rays</div>
     </div>
   </div>
   
